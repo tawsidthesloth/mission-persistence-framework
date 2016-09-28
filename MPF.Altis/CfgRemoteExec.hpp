@@ -25,8 +25,6 @@ class CfgRemoteExec {
 
         /* Anyone functions */
         Function(Client_fnc_playSound,ANYONE)
-		
-		#include "Functions\modules\CONFIG\moduleRemoteFunctions.hpp"
     };
 
     class Commands {

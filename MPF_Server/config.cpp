@@ -29,18 +29,9 @@ class CfgFunctions
 		{
 			file = "MPF_Server\External\ExtDB";
 			class ExtDBasync {};
-            class ExtDBinit {};
+      class ExtDBinit {};
 			class ExtDBstrip {};
 			class ExtDBquery {};
 		};
-	};
-	class ServerModules
-	{
-		class Config
-		{
-			file = "MPF_Server\Functions\modules\CONFIG";
-			class initModules {};
-		};
-		#include "Functions\modules\CONFIG\moduleFunctions.hpp"
 	};
 };

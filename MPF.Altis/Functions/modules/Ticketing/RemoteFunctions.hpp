@@ -1,1 +1,0 @@
-        Function(ClientModules_fnc_ticketGet,CLIENT)
