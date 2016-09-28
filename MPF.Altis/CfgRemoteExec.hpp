@@ -3,8 +3,8 @@
 };
 
 #define ANYONE 0
-#define CLIENT 1
-#define SERVER 2
+#define MPFC 1
+#define MPFS 2
 
 class CfgRemoteExec {
     class Functions {
@@ -12,19 +12,19 @@ class CfgRemoteExec {
         jip = 0;
 
         /* Client functions */
-        Function(Client_fnc_loadInventory,CLIENT)
-        Function(Client_fnc_hintMP,CLIENT)
-        Function(Client_fnc_addBank,CLIENT)
-        Function(Client_fnc_addCash,CLIENT)
-        Function(Client_fnc_cuffTarget,CLIENT)
-        Function(Client_fnc_putInCarTarget,CLIENT)
-        Function(Client_fnc_unCuffTarget,CLIENT)
+        Function(MPFC_fnc_loadInventory,MPFC)
+        Function(MPFC_fnc_hintMP,MPFC)
+        Function(MPFC_fnc_addBank,MPFC)
+        Function(MPFC_fnc_addCash,MPFC)
+        Function(MPFC_fnc_cuffTarget,MPFC)
+        Function(MPFC_fnc_putInCarTarget,MPFC)
+        Function(MPFC_fnc_unCuffTarget,MPFC)
 
         /* Server functions */
-        Function(Server_fnc_initStats,SERVER)
+        Function(MPFS_fnc_initStats,MPFS)
 
         /* Anyone functions */
-        Function(Client_fnc_playSound,ANYONE)
+        Function(MPFC_fnc_playSound,ANYONE)
     };
 
     class Commands {

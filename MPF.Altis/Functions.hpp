@@ -1,6 +1,6 @@
 class CfgFunctions
 {
-	class Client
+	class MPFC
 	{
 		class Init
 		{

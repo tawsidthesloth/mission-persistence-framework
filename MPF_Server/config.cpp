@@ -11,7 +11,7 @@ class CfgPatches
 
 class CfgFunctions
 {
-	class Server
+	class MPFS
 	{
 		class Save
 		{
@@ -23,11 +23,11 @@ class CfgFunctions
 		};
 
 	};
-	class ExternalS
+	class DB
 	{
 		class ExtDB
 		{
-			file = "MPF_Server\External\ExtDB";
+			file = "MPF_Server\DB\ExtDB";
 			class ExtDBasync {};
       class ExtDBinit {};
 			class ExtDBstrip {};
