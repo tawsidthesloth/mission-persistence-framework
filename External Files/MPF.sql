@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `rpframework`
+-- Database: `mpf`
 --
 
 -- --------------------------------------------------------
@@ -29,17 +29,9 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `users` (
   `uid` varchar(50) DEFAULT NULL,
   `name` varchar(50) DEFAULT NULL,
-  `items` varchar(1500) NOT NULL,
-  `clothes` varchar(1500) NOT NULL,
-  `pweapon` varchar(20) NOT NULL,
-  `sweapon` varchar(20) NOT NULL,
-  `cash` int(13) NOT NULL,
-  `bank` int(13) NOT NULL,
-  `cop` int(13) NOT NULL,
-  `ems` int(13) NOT NULL,
+  `gear` varchar(2500) NOT NULL,
   `position` varchar(50) NOT NULL,
-  `garage` varchar(1000) NOT NULL,
-`bankaccount` int(11) NOT NULL
+`playerNumber` int(11) NOT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
@@ -50,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
- ADD PRIMARY KEY (`bankaccount`), ADD UNIQUE KEY `uid` (`uid`);
+ ADD PRIMARY KEY (`playerNumber`), ADD UNIQUE KEY `uid` (`uid`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -60,7 +52,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-MODIFY `bankaccount` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `playerNumber` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
