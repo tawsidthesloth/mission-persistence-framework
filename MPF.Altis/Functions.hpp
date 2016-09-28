@@ -6,6 +6,7 @@ class CfgFunctions
 		{
 			file = "Functions\core\Init";
 			class loadInventory {};
+			class init{};
 		};
 	};
 };

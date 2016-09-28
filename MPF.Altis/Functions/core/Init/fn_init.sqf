@@ -1,10 +1,3 @@
-/*
-Author: Kerkkoh
-First Edit: 23.11.2015
-*/
-
-[] call MPFC_fnc_init;
-/*
 enableSaving [false, false];
 
 sleep 1;
@@ -24,4 +17,3 @@ if (isServer) then {
 
 	cutText ["","plain",1];
 };
-*/
