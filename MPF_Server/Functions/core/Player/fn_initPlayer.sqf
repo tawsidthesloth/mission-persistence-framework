@@ -31,7 +31,5 @@ if (_booli) then {
 	_insertstr = format ["insertPlayerInfo:%1:%2:%3:%4", _uid, _name, _gear, _position];
 	_insert = [0, _insertstr] call DB_fnc_ExtDBquery;
 
-	sleep 3;
-
 	[_player] spawn MPFS_fnc_initPlayer;
 }

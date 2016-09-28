@@ -24,8 +24,6 @@ if(_mode isEqualTo 1) exitWith {true};
 _key = call compile format["%1",_key];
 _key = _key select 1;
 
-uisleep (random .03);
-
 _queryResult = "";
 _loop = true;
 while{_loop} do
@@ -45,7 +43,6 @@ while{_loop} do
 		if (_queryResult isEqualTo "[3]") then
 		{
 			diag_log format ["extDB3: uisleep [4]: %1", diag_tickTime];
-			uisleep 0.1;
 		} else {
 			_loop = false;
 		};

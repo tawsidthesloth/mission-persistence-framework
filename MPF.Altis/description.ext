@@ -1,5 +1,6 @@
 #include "Functions.hpp"
 #include "CfgRemoteExec.hpp"
+#include "Config\Master.hpp"
 
 enableDebugConsole = 2;
 

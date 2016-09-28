@@ -59,5 +59,6 @@ else
 	diag_log "extDB3: Already Setup";
 	_return = true;
 };
-
+MPF_server_isReady = true;
+publicVariable "MPF_server_isReady";
 _return
