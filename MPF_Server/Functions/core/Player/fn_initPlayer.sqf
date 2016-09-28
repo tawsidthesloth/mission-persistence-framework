@@ -33,5 +33,5 @@ if (_booli) then {
 
 	sleep 3;
 
-	[_player] spawn MPFS_fnc_initStats;
+	[_player] spawn MPFS_fnc_initPlayer;
 }

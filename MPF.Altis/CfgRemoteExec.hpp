@@ -13,15 +13,9 @@ class CfgRemoteExec {
 
         /* Client functions */
         Function(MPFC_fnc_loadInventory,MPFC)
-        Function(MPFC_fnc_hintMP,MPFC)
-        Function(MPFC_fnc_addBank,MPFC)
-        Function(MPFC_fnc_addCash,MPFC)
-        Function(MPFC_fnc_cuffTarget,MPFC)
-        Function(MPFC_fnc_putInCarTarget,MPFC)
-        Function(MPFC_fnc_unCuffTarget,MPFC)
 
         /* Server functions */
-        Function(MPFS_fnc_initStats,MPFS)
+        Function(MPFS_fnc_initPlayer,MPFS)
 
         /* Anyone functions */
         Function(MPFC_fnc_playSound,ANYONE)

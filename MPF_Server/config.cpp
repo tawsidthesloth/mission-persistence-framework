@@ -13,13 +13,13 @@ class CfgFunctions
 {
 	class MPFS
 	{
-		class Save
+		class Player
 		{
-			file = "MPF_Server\Functions\core\Save";
-			class handleDisconnect {};
-            class initStats {};
-            class statSave {};
-            class statSaveLoop {};
+			file = "MPF_Server\Functions\Core\Player";
+					class handleDisconnectPlayer {};
+      		class initPlayer {};
+      		class savePlayer {};
+      		class saveLoopPlayer {};
 		};
 
 	};
