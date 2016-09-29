@@ -22,6 +22,15 @@ class CfgFunctions
       		class saveLoopPlayer {};
 		};
 
+		class Slot
+		{
+			file = "MPF_Server\Functions\Core\Slot";
+					class handleDisconnectSlot {};
+      		class initSlot {};
+      		class saveSlot {};
+      		class saveLoopSlot {};
+		};
+
 	};
 	class DB
 	{

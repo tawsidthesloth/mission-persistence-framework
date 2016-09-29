@@ -34,6 +34,14 @@ CREATE TABLE IF NOT EXISTS `users` (
 `playerNumber` int(11) NOT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
+CREATE TABLE IF NOT EXISTS `slots` (
+  `uid` varchar(50) DEFAULT NULL,
+  `lastName` varchar(50) DEFAULT NULL,
+  `gear` varchar(2500) NOT NULL,
+  `position` varchar(50) NOT NULL,
+`slotNumber` int(11) NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
 --
 -- Indexes for dumped tables
 --
@@ -44,6 +52,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 ALTER TABLE `users`
  ADD PRIMARY KEY (`playerNumber`), ADD UNIQUE KEY `uid` (`uid`);
 
+ALTER TABLE `slots`
+  ADD PRIMARY KEY (`slotNumber`), ADD UNIQUE KEY `uid` (`uid`);
+
 --
 -- AUTO_INCREMENT for dumped tables
 --
@@ -53,6 +64,9 @@ ALTER TABLE `users`
 --
 ALTER TABLE `users`
 MODIFY `playerNumber` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+
+ALTER TABLE `slots`
+MODIFY `slotNumber` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

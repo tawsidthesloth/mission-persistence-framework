@@ -16,6 +16,7 @@ class CfgRemoteExec {
 
         /* Server functions */
         Function(MPFS_fnc_initPlayer,MPFS)
+        Function(MPFS_fnc_initSlot,MPFS)
 
         /* Anyone functions */
         Function(MPFC_fnc_playSound,ANYONE)
