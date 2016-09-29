@@ -4,7 +4,7 @@ class CfgFunctions
 	{
 		class Init
 		{
-			file = "Functions\core\Init";
+			file = "MPF\Functions\core\Init";
 			class loadInventory {};
 			class init{};
 		};

@@ -1,6 +1,6 @@
-#include "Functions.hpp"
-#include "CfgRemoteExec.hpp"
-#include "Config\Master.hpp"
+#include "MPF\Functions.hpp"
+#include "MPF\CfgRemoteExec.hpp"
+#include "MPF\Config\Master.hpp"
 
 enableDebugConsole = 2;
 
