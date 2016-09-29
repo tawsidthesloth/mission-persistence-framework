@@ -29,6 +29,15 @@ class CfgFunctions
       		class initSlot {};
       		class saveSlot {};
       		class saveLoopSlot {};
+					class removeDup {};
+		};
+
+		class Storage
+		{
+			file = "MPF_Server\Functions\Core\Storage";
+      		class initStorage {};
+					class saveStorage {};
+					class saveLoopStorage {};
 		};
 
 	};
