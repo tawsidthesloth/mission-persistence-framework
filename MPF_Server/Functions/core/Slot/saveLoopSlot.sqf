@@ -13,7 +13,7 @@ for "_i" from 0 to 1 step 0 do {
     _slotStr = format ["%1%2%3%4", _unitStr select 0, _unitStr select 1,_unitStr select 2,_unitStr select 3]
     _checkstr = format ["existSlotInfo:%1", _slotStr];
 
-		_check = [0, _checkstr] call DB_fnc_ExtDBquery;
+		_check = [_checkstr,0] call DB_fnc_ExtDBasync;
 		_booli = (_check select 0) select 0;
 
 		_loadedIn = _x getVariable "loadedIn";
@@ -25,7 +25,7 @@ for "_i" from 0 to 1 step 0 do {
 			_slotNumber = _x getVariable "slotNumber";
 
 			_updatestr = format ["updateSlotInfo:%1:%2:%3:%4", _gear, _position, _lastName, _slotNumber];
-			_update = [0, _updatestr] call DB_fnc_ExtDBquery;
+			_update = [_updatestr, 0] call DB_fnc_ExtDBasync;
 		};
 	}forEach allPlayers;
 };

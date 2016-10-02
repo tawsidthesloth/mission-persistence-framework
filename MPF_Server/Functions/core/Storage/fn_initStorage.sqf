@@ -8,7 +8,7 @@ _fetchstr = format ["storageInfo"];
 _fetch = [_fetchstr, 2] call DB_fnc_ExtDBasync;
 [_fetch] call MPFS_fnc_removeDup;
 _delstr = format ["storageDelete"];
-_del = [0, _delstr] call DB_fnc_ExtDBquery;
+_del = [_delstr,1] call DB_fnc_ExtDBasync;
 diag_log _fetch;
 {
   _box = (_x select 0) createVehicle (_x select 2);

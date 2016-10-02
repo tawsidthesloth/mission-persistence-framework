@@ -9,7 +9,6 @@ if (isServer) then {
   if(MPF_SETTINGS(getNumber,"player_track")==1) then {
     [] call MPFS_fnc_handleDisconnectPlayer;
     [] spawn MPFS_fnc_saveLoopPlayer;
-		[] call MPFS_fnc_saveStorage;
   }else{
     [] call MPFS_fnc_handleDisconnectSlot;
     [] spawn MPFS_fnc_saveLoopSlot;

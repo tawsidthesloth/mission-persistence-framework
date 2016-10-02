@@ -11,4 +11,4 @@ _gear = getUnitLoadout _player;
 _position = position _player;
 
 _updatestr = format ["updatePlayerInfo:%1:%2:%3", _gear, _position, _uid];
-_update = [0, _updatestr] call DB_fnc_ExtDBquery;
+_update = [_updatestr,1] call DB_fnc_ExtDBasync;

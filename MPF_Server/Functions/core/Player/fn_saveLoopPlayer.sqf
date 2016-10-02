@@ -9,7 +9,7 @@ for "_i" from 0 to 1 step 0 do {
 		_uid = getPlayerUID _x;
 
 		_checkstr = format ["existPlayerInfo:%1", _uid];
-		_check = [0, _checkstr] call DB_fnc_ExtDBquery;
+		_check = [_checkstr,1] call DB_fnc_ExtDBasync;
 		_booli = (_check select 0) select 0;
 
 		_loadedIn = _x getVariable "loadedIn";
@@ -20,7 +20,7 @@ for "_i" from 0 to 1 step 0 do {
 			_playerNumber = _x getVariable "playerNumber";
 
 			_updatestr = format ["updatePlayerInfo:%1:%2:%3", _gear, _position, _uid];
-			_update = [0, _updatestr] call DB_fnc_ExtDBquery;
+			_update = [_updatestr,1] call DB_fnc_ExtDBasync;
 		};
 	}forEach allPlayers;
 };

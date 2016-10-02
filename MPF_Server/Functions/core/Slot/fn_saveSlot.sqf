@@ -11,4 +11,4 @@ _gear = getUnitLoadout _player;
 _position = position _player;
 _lastName = name _player;
 _updatestr = format ["updateSlotInfo:%1:%2:%3:%4", _gear, _position, _lastName,_slotNumber];
-_update = [0, _updatestr] call DB_fnc_ExtDBquery;
+_update = [_updatestr, 0] call DB_fnc_ExtDBasync;
