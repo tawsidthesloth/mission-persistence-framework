@@ -3,7 +3,7 @@
 
 class MPF_Settings {
   player_track = false;//tracks the player rather than slot
-
+  player_test=5;
   track_storage_by_class=true;
   track_storage_by_class_list[] = {""};
 
