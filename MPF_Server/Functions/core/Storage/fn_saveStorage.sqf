@@ -1,5 +1,5 @@
 _delstr = format ["storageDelete"];
-_del = [0, _delstr] call DB_fnc_ExtDBquery;
+_del = [_delstr,1] call DB_fnc_ExtDBasync;
 sleep 1;
 {
   _items = getItemCargo _x;
@@ -11,6 +11,6 @@ sleep 1;
   sleep 1;
   _insertstr = format ["insertStorageInfo:%1:%2:%3", typeOf _x, _gear, position _x];
   diag_log _insertstr;
-	_insert = [0, _insertstr] call DB_fnc_ExtDBquery;
+	_insert = [_insertstr,1] call DB_fnc_ExtDBasync;
   diag_log _insert;
 } forEach (entities "ReammoBox_F");

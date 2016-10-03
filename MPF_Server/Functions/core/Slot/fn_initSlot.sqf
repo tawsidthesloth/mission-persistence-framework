@@ -10,9 +10,11 @@ _unitStr = _unit splitString "() :-";
 _slotStr = format ["%1%2%3%4%5", _unitStr select 0, _unitStr select 1,_unitStr select 2,_unitStr select 3,_unitStr select 4];
 _checkstr = format ["existSlotInfo:%1", _slotStr];
 
-_check = [0, _checkstr] call DB_fnc_ExtDBquery;
+_check = [_checkstr,2] call DB_fnc_ExtDBasync;
+diag_log "--------------------hhhhhhhhhhhhhhhh-------------------";
+diag_log _check;
 _booli = (_check select 0) select 0;
-
+diag_log _booli;
 
 if (_booli) then {
 	_fetchstr = format ["slotInfo:%1", _slotStr];
@@ -33,6 +35,8 @@ if (_booli) then {
 	_position = position _player;
 
 	_insertstr = format ["insertSlotInfo:%1:%2:%3:%4", _slotStr, _name, _gear, _position];
-	_insert = [0, _insertstr] call DB_fnc_ExtDBquery;
+	diag_log _insertstr;
+	_insert = [_insertstr,1] call DB_fnc_ExtDBasync;
 	[_player] spawn MPFS_fnc_initSlot;
-}
+};
+diag_log "--------------------hhhhhhhhfgdfgdfgdfgdfgdfghhhhhhhh-------------------";
